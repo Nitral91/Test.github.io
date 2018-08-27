@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>Test</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<section class="main-page">
+    <div class="left-bar">
+        <div class="footer">
+            <ul>
+                <li><a href="#">название1</a></li>
+                <li><a href="#">название1</a></li>
+                <li><a href="#">название1</a></li>
+                <li><a href="#">название1</a></li>
+                <li><a href="#">очень длинное название5</a></li>
+                <li><a href="#">очень очень длинное название6</a></li>
+                <li><a href="#">длинное название7</a></li>
+                <li><a href="#">длинное название8</a></li>
+            </ul>
+        </div>
+        <div class="second var_a">
+            <div class="content">
+                <div class="num">30%</div>
+                <div class="descr">людей обращают внимание на а.</div>
+            </div>
+        </div>
+        <div class="second var_b">
+            <div class="content">
+                <div class="num">46%</div>
+                <div class="descr">людей обращают внимание на б.</div>
+            </div>
+        </div>
+        <div class="second var_c">
+            <div class="content">
+                <div class="num">14%</div>
+                <div class="descr">людей обращают внимание на в.</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-bar">
+        <div class="content start">
+            <img src="images/icon-1.png" alt="">
+            <p class="title">Lorem Ipsum</p>
+            <p class="sub-title">Mauris vel nisi ac orci placerat semper. Aenean sapien massa.</p>
+            <div class="question">Lorem ipsum?</div>
+            <button class="button">Начать</button>
+        </div>
+        <div class="content second">
+            <img src="images/icon-2.png" alt="">
+            <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a urna sit amet </p>
+            <button class="var_a">Вариант А</button>
+            <button class="var_b">Вариант Б</button>
+            <button class="var_c">Вариант В</button>
+            <button class="button">Продолжить</button>
+        </div>
+        <div class="content form">
+            <img src="images/icon-3.png" alt="">
+            <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+            <form action="">
+                <p class="text">Я ищу:</p>
+                <div class="flex">
+                    <input type="radio" name="feature" id="feature-1">
+                    <label for="feature-1"><span class="flex"><img src="images/man.png" alt="">Вариант 1</span></label>
+                    <input type="radio" name="feature" id="feature-2">
+                    <label for="feature-2"><span class="flex"><img src="images/woman.png" alt="">Вариант 2</span></label>
+                </div>
+                <div class="line">
+                    <p>Ваше имя: </p>
+                    <input id="name" onkeyup="checkParams()" type="text" autocomplete="off" required>
+                    <span class="form__error">Введите своё имя</span>
+                </div>
+                <div class="line">
+                    <p>Email: </p>
+                    <input id="email" onkeyup="checkParams()" type="email" autocomplete="off" required>
+                    <span class="form__error">Неверный формат email</span>
+                </div>
+                <div class="line">
+                    <p>Придумайте пароль: </p>
+                    <input id="password" onkeyup="checkParams()" type="password" autocomplete="off" required>
+                    <span class="form__error">Придумайте новый пароль</span>
+                </div>
+                <div class="line-checbox">
+                    <input type="checkbox" name="confirm" id="confirm">
+                    <label for="confirm">Регистрируясь, вы подтверждаете, что вам уже исполнилось<br>18 лет и вы ознакомились с условиями пользования сайтом.</label>
+                </div>
+                <input id="submit" disabled type="submit" value="Продолжить">
+            </form>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
